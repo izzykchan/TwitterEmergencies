@@ -17,21 +17,25 @@
       <!--  QUERIES STYLESHEET -->
       <link rel="stylesheet" href="css/queries.css">
 
-      <script src="css/active-nav.js"></script>
-      <script src="jquery-3.4.1.min.js"></script>
+      <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="js/active-nav.js"></script>
+      <script src="js/jquery.waypoints.js"></script>
 
   </head>
 
   <body>
     <header>
       <!--  NAV MENU -->
+      <!-- added 'scroll' class-->
+      <!-- MUST BE MORE SCALABLE AT SMALL SIZES, HAMBURGER MENU-->
       <nav id="navBar">
-        <a href="#overview" class="button-nav">overview</a>
-        <a href="#framing" class="button-nav">framing</a>
-        <a href="#audiences" class="button-nav">audiences</a>
-        <a href="#scenarios" class="button-nav">scenarios</a>
-        <a href="#feasability" class="button-nav">feasability</a>
-        <a href="#value" class="button-nav">value</a>
+        <a href="#overview" class="button-nav scroll">Overview</a>
+        <a href="#framing" class="button-nav scroll">Framing</a>
+        <a href="#audiences" class="button-nav scroll">Audiences</a>
+        <!--Scenario scrolls too far-->
+        <a href="#scenarios" class="button-nav scroll">Scenarios</a>
+        <a href="#feasability" class="button-nav scroll">Feasability</a>
+        <a href="#value" class="button-nav scroll">Value</a>
       </nav>
 
     </header>
@@ -149,6 +153,8 @@
           <p class="img-caption">Diagram of the account verification process.</p>
         </div>
 
+        <!-- Add some bullet points -->
+        
         <h2 class="space-above">Benefits of Getting Verified</h2>
         <p class="writeup">The account receives an Orange Verification Badge.</p>
         <p class="writeup">Onboarding provided to learn best practices for being an Emergency Verified Account</p>
@@ -165,6 +171,7 @@
       </div>
 
       <!-- USER FLOW SCENARIOSSS -->
+      <!-- SCROLL ERROR CAUSED BY OFFSET FROM IMAGE BELOW TITLE-->
       <div id="scenarios" class="space-above space-below page-section">
         <div class="third-span">
           <div class="main-title">
