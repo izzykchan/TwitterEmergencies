@@ -25,10 +25,13 @@
 
 
 <!--TODO-->
-<!--Make video players scroll behind nav menu-->
+<!--Make video players scroll behind nav menu--> <!--(HALF-FIXED) with autoplay-->
 <!--Scenario scrolls too far-->
-<!--at 850-720 px "scenario" jumps up with 'who does this impact'-->
-  
+<!--at 850-720 px "scenario" jumps up with 'who does this impact'--> <!--(FIXED)-->
+<!--hamburger menu needs to be able to be closed with x icon or by tapping outside menu-->
+<!--add bullet points to benefits of being verified-->
+<!--HEAVY javascript interaction, blue highlight beneath navigation item indicates how far in section scroll bar is-->
+
 <body>
     <header>
       <!--  NAV MENU -->
@@ -44,7 +47,7 @@
           <a href="#overview" class="button-nav scroll">Overview</a>
           <a href="#framing" class="button-nav scroll">Framing</a>
           <a href="#audiences" class="button-nav scroll">Audiences</a>
-          <a href="#scenarios" class="button-nav scroll">Scenarios</a>
+          <a href="#scenario" class="button-nav scroll">Scenarios</a>
           <a href="#feasability" class="button-nav scroll">Feasability</a>
           <a href="#value" class="button-nav scroll">Value</a>
         </nav>
@@ -184,17 +187,21 @@
 
       <!-- USER FLOW SCENARIOSSS -->
       <!-- SCROLL ERROR CAUSED BY OFFSET FROM IMAGE BELOW TITLE-->
-      <div id="scenarios" class="space-above space-below page-section">
-        <div class="third-span">
-          <div class="main-title">
-            <h1>Scenario</h1>
+      <!-- (Fixed) by making a section around scenarios so it doesn't mix with above section-->
+      <section id="scenario">
+        <div id="scenarios" class="space-above space-below page-section">
+          <div class="third-span">
+            <div class="main-title">
+              <h1>Scenario</h1>
+            </div>
           </div>
         </div>
-      </div>
-
+      </section>
+        
       <img src="images/user-flow.png" class="img-right pop-up" alt="">
       <p class="img-caption">Userflow diagram of an emergency situation with Twitter Emergencies implemented.</p>
-
+      
+<!--CREATING AN EMERGENCY-->
       <section id="create-emerg">
       <div class="third-span">
         <h3 class="sub-eaccount">Verified Emergency Account</h3>
@@ -208,7 +215,7 @@
         <p class="writeup">When accessing the Emergency tab, users are greeted with a list of their current active Emergency Feeds that can be viewed and edited, as well those that have been archived.</p>
         <p class="writeup">Here, users can click on ‘Create’ to begin the 5 step process.</p>
         <p class="writeup space-below">To set expectations with the emergency tool, we’re providing the user a glance at what steps they will be going through to create an Emergency Feed. This will help Emergency Officials prepare the necessary information needed.</p>
-        <video controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
+        <video autoplay controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
         <source src="images/home-intro.mp4" type="video/mp4" alt="Video walk through going from the home screen of twitter to the main emergencies tab, where there is an area showing all active emergencies, there are two currently active Wildfire Williams lake, and Flooding Delta BC. There is another tab that is labeled Archived emergencies. They click onto an orange create button that brings up a new screen showing and overview of the 5 step process to create an emergency: Define, locate, describe, contributors, Review.">Your browser does not support the HTML5 video tag.
         </video>
         <p class="img-caption">Navigating to the Emergency tab to create an Emergency.</p>
@@ -223,7 +230,7 @@
         <p class="writeup">The Emergency Official will first define and locate the emergency. It’s important to accurately set up the Notification Area. We’re offering 3 different methods to help them define the areas where people will be directly affected by the emergency.</p>
         <p class="writeup">We chose to provide a radius, region, and path option because of the variety of possible events that could occur, and also to cater to different types of location data in use.</p>
         <p class="writeup space-below">Our Help icon opens up a dialog that explains each option with visuals and suggestions for when it’s best to use.</p>
-        <video controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
+        <video autoplay controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
         <source src="images/define-locate.mp4" type="video/mp4" alt="Video walk through showing UI for creating an emergency, On the left is the fields for describing emergency, on the right is a preview of what the emergecy card looks like its orange with white text. They step through the define and location step and look at the help popups which describe what to do for each step.">Your browser does not support the HTML5 video tag.
         </video>
         <p class="img-caption">The first two steps of the creating an Emergency process.</p>
@@ -239,7 +246,7 @@
         <p class="writeup">Often times there are mutliple emergency organizations responding to an event.</p>
         <p class="writeup space-below">Here, other Emergency Verified Accounts can be added to the Emergency Feed, where they can help curate the content and this will let Twitter Users know of other trustful sources.</p>
 
-        <video controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
+        <video autoplay controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
         <source src="images/describe-contributors.mp4" type="video/mp4" alt="Video walkthrough showing UI for creating an emergency. First filling in emergency description then moving on to the step where contributors are added via a search box and suggested list.">Your browser does not support the HTML5 video tag.
         </video>
         <p class="img-caption">Steps 3 and 4 of creating an Emergency.</p>
@@ -249,7 +256,7 @@
         <p class="writeup">Twitter Users will be viewing Emergency Feeds as credible because of the Emergency Verified Badge. If information is questionable, Twitter’s credibility may take a hit.</p>
         <p class="writeup space-below">After publishing, we showcase the next steps to take. View the Emergency Feed and start adding tweets.</p>
 
-        <video controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
+        <video autoplay controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
         <source src="images/review-confirm-pub.mp4" type="video/mp4" alt="Video walkthrough showing UI for confirming an emergency. Each step is highlighted on the side and in the emergency card, One by one each step is confirmed, with the current step in full opactiy and the rest faded.">Your browser does not support the HTML5 video tag.
         </video>
         <p class="img-caption">The final steps of reviewing and publishing a new Emergency.</p>
@@ -259,12 +266,12 @@
         <p class="writeup">When writing a tweet, they have the option to select one of their Active Emergencies to have the tweet added to the Emergency Feed.</p>
         <p class="writeup space-below">Or, the user may select any relevant and accurate tweet from another Twitter account, and add it to one of their Emergency Feeds.</p>
 
-        <video controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
+        <video autoplay controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
         <source src="images/curating.mp4" type="video/mp4" alt="Video walkthrough showing UI for adding a tweet to an emergency. By pressing the more menu on a tweet a menue pops up with an add to emergency button. A UI then pops up to choose which emergnecy to add the tweet to and then to confirm.">Your browser does not support the HTML5 video tag.
         </video>
         <p class="img-caption space-below">Adding tweets to an active Emergency from Home.</p>
 
-        <video controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
+        <video autoplay controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
         <source src="images/write-tweet.mp4" type="video/mp4" alt="Video walkthrough showing UI for writing a tweet and adding it straight to an emergency. This happens through a new orange emergency button that open up the option to choose one of the accounts active emergencies.  ">Your browser does not support the HTML5 video tag.
         </video>
         <p class="img-caption">Writing a tweet and adding it directly into an Emergency.</p>
@@ -279,6 +286,8 @@
         </div>
       </div>
 
+
+    <!--DISCOVERY-->  
       <div>
         <h2 class="space-above">Discovery</h2>
         <p class="writeup">If a Twitter User is located within the set boundaries of an active emergency, they will see the Emergency Feed pushed to the top of their Moments. It will be the first thing they see when opening the Search Tab.</p>
@@ -302,7 +311,7 @@
 
       <section class="less-space-above">
         <div class="vid-text third-span">
-          <video controls loop muted preload="metadata" class="img-left pop-up">
+          <video autoplay controls loop muted preload="metadata" class="img-left pop-up">
 	        <source src="images/mobile-feed.mp4" type="video/mp4" alt="Video showing the opening of a twitter emergency. Tapping header, and seeing full description and tweet feed presented.">Your browser does not support the HTML5 video tag.
           </video>
         </div>
@@ -322,7 +331,7 @@
         </div>
         <div class="half-span">
         <div class="half-span-img">
-          <video controls loop muted preload="metadata" class="img-left pop-up">
+          <video autoplay controls loop muted preload="metadata" class="img-left pop-up">
           <source src="images/notify.mp4" type="video/mp4" alt="Video showing user scrolling to the bottom of the feed to show they are up to date, then hitting notifications where they are prompted to confirm they want to recive updates.">Your browser does not support the HTML5 video tag.
           </video>
         </div>
