@@ -1,0 +1,146 @@
+@media (max-width: 73.75rem) {
+    body {
+      padding: 3rem 3rem;
+    }
+
+    #overview .main-title{
+      margin-top: 3rem;
+    }
+}
+
+@media (max-width: 68.75rem) {
+    h1 {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+
+    .space-above {
+      padding-top: 1rem;
+    }
+}
+
+@media (max-width: 63.75rem) {
+    h1 {
+      font-size: 2.25rem;
+      line-height: 2.25rem;
+    }
+
+    .main-title {
+      border-bottom: 6px solid #2AA3EF;
+    }
+
+    #overview .main-title{
+      margin-top: 1rem;
+    }
+
+    .button-nav {
+      width: 16%;
+    }
+
+    .space-above {
+      padding-top: 1rem;
+    }
+
+    section {
+      padding-top: 3rem;
+    }
+
+    nav a {
+      font-size: 1rem;
+    }
+}
+
+@media (max-width: 50rem) {
+  .writeup-content {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 45rem) {
+  #overview, section, #framing, #audiences {
+    display: block;
+    padding-top: 4rem;
+  }
+
+  .third-span {
+    width: 100%;
+  }
+
+  .main-title {
+    width: 50%;
+  }
+
+  .two-thirds-span, .half-span {
+    width: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  h1.quote {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    padding-top: 2rem;
+  }
+
+  h1.stat-quote {
+    font-size: 4rem;
+  }
+
+  video.img-left {
+    width: 65%;
+  }
+
+  .vert-align-center {
+    padding-top: 2rem;
+  }
+
+  .less-space-above {
+    padding-top: 0rem;
+  }
+
+  #feasability .half-span {
+    padding-top: 2rem;
+  }
+
+  .half-span-img {
+    max-height: 20rem;
+  }
+
+  .half-span-img img {
+    height: auto;
+  }
+
+  .vid-text video {
+    max-height: 20rem;
+  }
+
+  section.less-space-above .half-span-img {
+    max-height: 20rem;
+  }
+}
+
+@media (max-width: 23.5rem) {
+  body {
+    padding: 1rem 1.5rem;
+  }
+
+  .writeup-content {
+    padding: 0 0rem;
+  }
+
+  .main-title {
+    width: 75%;
+  }
+
+  #overview, section, #framing, #audiences {
+    padding-top: 2rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  video.img-left {
+    width: 90%;
+  }
+}

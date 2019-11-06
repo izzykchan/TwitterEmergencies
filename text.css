@@ -1,0 +1,96 @@
+h1 {
+  font-size: 3.5rem;
+  color: #14171A;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+}
+
+h1.quote {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #2AA3EF;
+}
+
+h1.stat-quote {
+  font-size: 7rem;
+  text-align: center;
+  color: #2AA3EF;
+}
+
+#overview .main-title{
+  margin-top: 5.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #14171A;
+  margin-top: 0rem;
+  margin-bottom: 0;
+}
+
+h2.stat-quote {
+  width: 15rem;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+h3.in-text {
+  line-height: 0.25rem;
+}
+
+.section {
+  color: #14171A;
+  line-height: 0.05rem;
+  letter-spacing: 0rem;
+}
+
+.sub-twitter {
+  color: #2AA3EF;
+}
+
+.sub-eaccount {
+  color: #F45D22;
+}
+
+.sub-public {
+  color: #28BD66;
+}
+
+.writeup {
+  font-weight: 300;
+  color: #14171A;
+  height: fit-content;
+}
+
+.emphasis {
+  font-weight: 500;
+}
+
+.main-title {
+  display: block;
+  border-bottom: 8px solid #2AA3EF;
+  height: fit-content;
+  line-height: 3.25rem;
+}
+
+.space-above {
+  padding-top: 2rem;
+}
+
+.space-below {
+  padding-bottom: 2rem;
+}
+
+.img-caption {
+  font-size: 0.75rem;
+  color: #657786;
+}

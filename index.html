@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="wide=device-width, initial-scale=1">
+
+      <title>Twitter Emergencies</title>
+
+      <!--  STYLESHEET LINK(S) -->
+      <!--  FROM GITHUB: NORMALIZING STYLE -->
+      <link rel="stylesheet" href="css/normalize.css">
+      <!--  MAIN STYLESHEET -->
+      <link rel="stylesheet" href="css/main.css">
+      <!--  TEXT ELEMENTS STYLESHEET -->
+      <link rel="stylesheet" href="css/text.css">
+      <!--  QUERIES STYLESHEET -->
+      <link rel="stylesheet" href="css/queries.css">
+
+      <script src="css/active-nav.js"></script>
+      <script src="jquery-3.4.1.min.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <!--  NAV MENU -->
+      <nav id="navBar">
+        <a href="#overview" class="button-nav">overview</a>
+        <a href="#framing" class="button-nav">framing</a>
+        <a href="#audiences" class="button-nav">audiences</a>
+        <a href="#scenarios" class="button-nav">scenarios</a>
+        <a href="#feasability" class="button-nav">feasability</a>
+        <a href="#value" class="button-nav">value</a>
+      </nav>
+
+    </header>
+    <!-- INCREASED L + R BORDERS FOR MAIN WRITEUP CONTENT -->
+    <div class="writeup-content">
+
+    <section class="page-section" id="overview">
+    <div class="third-span">
+      <div class="main-title">
+        <h1>Twitter Emergencies</h1>
+      </div>
+      <p class="writeup space-above">A design intervention for the Twitter platform, to empower Emergency Service Management Officials, and help them inform and protect people who are directly affected by large scale emergency events.</p>
+    </div>
+    <div class="two-thirds-span">
+      <img src="images/mockup-both.png" class="img-right" alt="this is a placeholder image">
+    </div>
+    </section>
+
+    <!-- PROJECT CONCEPT VIDEO -->
+    <div class="full-span space-above">
+      <!-- EMBEDDING VIDEO FROM VIMEO -->
+      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/313748148" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+
+    <div class="full-span">
+      <p class="img-caption">Twitter Emergencies concept video from Mischa Price on Vimeo.</p>
+    </div>
+
+    <section>
+    <div class="third-span"></div>
+    <div class="half-span">
+      <h2>What is a Twitter Emergency?</h2>
+      <p class="writeup">A “Twitter Emergency” is a feed for tweets that have been curated by Verified Emergency Accounts for being accurate, relevant, and necessary to share. The feed helps Emergency Officials guide the conversation on Twitter to minimize the spread of misinformation and confusion during emergencies.</p>
+    </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section id="framing" class="space-above page-section">
+
+    <div class="third-span">
+      <div class="main-title">
+        <h1>The Problem</h1>
+      </div>
+    </div>
+
+    <div class="half-span">
+      <h1 class="quote">"In the absence of timely and accurate information, [wildfire evacuees] turned to social media for updates; only to be confronted by misinformation.”</h1>
+      <p class="img-caption">BC Flood and Fire Review, 2018</p>
+      <p class="writeup space-above space-below">During an emergency the volume of tweets about it increases, stopping vital information from reaching individuals who need it.</p>
+
+      <div class="center-align space-below">
+      <h1 class="stat-quote">86%</h1>
+      <h2 class="stat-quote">of users spread misinformation by retweeting the original post</h2>
+      <p class="img-caption">Niles et al.2019</p>
+      </div>
+
+      <h2 class="space-above">Twitter's Current Solution</h2>
+      <p class="writeup">Twitter puts the burden on emergency accounts to change the behavior of users when they are affected by emergencies. Twitter's Emergency Tool Kit Guide only provides tips on how to manage an account by changing specific settings, rather than providing tools to help Emergency Officials.</p>
+      <img src="images/twitter-toolkit.png" class="img-left" alt="Screenshots from Twitter’s Emergency guide PDF. Instructions of what to do during an emergency. “Train your foloower to turn off ‘quality filter’ and ‘See the best tweets fist’ on their Twitter app during an emergency to get raw, unfilterd, real-time Tweets.” screenshot of list “LIVE RESPONSE - We remind people to: - Tweet with their precice location - turn off quality filter - Activate push notifications for our account - Tweet using relevant hashtags - follow our relevant twitter list">
+      <p class="img-caption">Excerpts from the Twitter Emergency Tool Kit Guide.</p>
+    </div>
+    </section>
+
+    <!-- OPPORTUNITY -->
+    <section class="space-below">
+      <div class="third-span">
+        <div class="main-title">
+          <h1>Opportunity</h1>
+        </div>
+      </div>
+      <div class="half-span">
+        <p class="writeup">Important information is already broadcast on Twitter today, but it competes with misinformed perspectives of people, misinformation and memes.</p>
+        <p class="writeup emphasis">So what if we gave the accounts already sharing life saving information their own space on the platform? To cut through the noise and get information to those who need it, so they are no longer searching in confusion.</p>
+        <img src="images/current-twitter-diagram.png" class="img-right space-above pop-up desktop-vid" alt="Diagram of what currently happens on Twitter during an emergency. Blue bubble with 6 examples of tweets, some of them with green labels have relevant and important emergency information but they are hard to idenify with all of the other political and misinformed tweets surrounding. This funnels into confused affected Twitter users.">
+        <p class="img-caption">A Twitter user's current experience of tweets during an emergency situation.</p>
+        <img src="images/solution-twitter-diagram.png" class="img-right space-above pop-up desktop-vid" alt="Diagram of what happens in a curated Emergency Feed by verified accounts. The official emergency information is highlighed within an orange background and the non-pressing information is faded to the back where it can still be seen but is no longer given equal footing to the most vital information.">
+        <p class="img-caption">The experience that Twitter Emergencies proposes for Twitter users during an emergency situation.</p>
+    </section>
+
+    <!-- AUDIENCES -->
+    <div id="audiences" class="page-section">
+      <div class="third-span">
+        <div class="main-title">
+          <h1>Who Does This Impact?</h1>
+        </div>
+      </div>
+      <div class="half-span">
+        <h3 class="sub-twitter">twitter</h3>
+        <h2>Establish Credibility</h2>
+        <p class="writeup">Doing this could potentially help Twitter establish themselves as a more credible informational resource. As a brand, they can further differentiate themselves from rival competitors and engage more closely with their users.</p>
+
+        <h3 class="sub-public space-above">twitter users</h3>
+        <h2 class="space-below">Emergency Page</h2>
+        <img src="images/twitter-user.png" class="img-right" alt="Image of our persona for a Twitter user. Image is of a concerned young woman using a mobile phone.">
+        <p class="img-caption">Persona: a daily Twitter user during an emergency situation.</p>
+        <p class="writeup space-below">When an emergency is occurring and a Twitter Emergency Feed has been created, Twitter Users can find it from the Search Tab and view the latest official updates and information as the event unfolds. Users can then retweet and share news while feeling assured that they are not spreading misinformation.</p>
+
+        <h3 class="sub-eaccount space-above">emergency officials</h3>
+        <p class="writeup">Organizations within and related to the emergency sector can apply to become a Verified Emergency Account on Twitter. This is similar to the existing verification process for user accounts that Twitter currently has implemented.</p>
+
+        <img src="images/potential-accounts.png" class="img-right" alt="Gallery of accounts that would receive Verified Emergency status. Natural disaster information accounts like EmergencyInfoBC, Local accounts like the city of Vancouver and the VPD. Health accounts like the BC CDC, Regional districts like the fraser valley regional district, or the Canadian forces for national level distasters.">
+        <p class="img-caption">A few potential Emergency Verified Accounts in British Columbia.</p>
+
+        <!-- DESIGN DECISION -->
+        <div class="design-decision">
+          <h3 class="sub-twitter">Key Design Decision</h3>
+          <p class="writeup">By recontextualizing the verification system on Twitter, we can give Emergency Officials a sense of unique status and authority within the platform that can communicate authenticity to other Twitter users.</p>
+        </div>
+
+        <h2 class="space-above">Verification Process</h2>
+        <p class="writeup">The profile must be up to date with all required information and must fill out an application form which can be found at help.twitter.com. </p>
+
+        <div class="space-below">
+          <img src="images/verified-process-box.png" class="img-right" alt="Infographic showing the verification process for verified emergency accounts. Accounts must meet certain criteria to qualify to be Emergency Verified (Run by governemnt or trusted third party such as Red Cross have direct role in emergency situations have at least one staff member responsible for the account). Next they can apply to Twitter to receive verification. Then the Twitter Team verifies that account meets requirements through mail, phone and online verification. Finally the account receives an email and after completeing onboarding they are ready to go!">
+          <p class="img-caption">Diagram of the account verification process.</p>
+        </div>
+
+        <h2 class="space-above">Benefits of Getting Verified</h2>
+        <p class="writeup">The account receives an Orange Verification Badge.</p>
+        <p class="writeup">Onboarding provided to learn best practices for being an Emergency Verified Account</p>
+        <p class="writeup">Access to the tool for creating and managing Emergency Feeds.</p>
+        <p class="writeup">Ability to become a contributor (admin) to other Emergency Feeds to help curate tweets. </p>
+
+        <div class="half-span-img">
+          <img src="images/onboarding.svg" class="img-right pop-up" alt="Profile of EmergencyInfoBC account with the verified emergency info orange badge with a checkmark.">
+        </div>
+        <div class="half-span-img">
+          <img src="images/emergbc-profile.png" class="img-right pop-up" alt="First screen of the Emergency Services onboarding screen. Welcome with a bold colage style graphic. There are three pages to the onboarding. Text: Welcome! Congratulations of becoming a verified emergency account. You now have a new Emergenceis tab in the left side menu where you can create and manage Emergency feeds.">
+        </div>
+        <p class="img-caption space-below">The onboarding pop-up a newly Emergency Verified account sees, along with the orange badge on the account profile.</p>
+      </div>
+
+      <!-- USER FLOW SCENARIOSSS -->
+      <div id="scenarios" class="space-above space-below page-section">
+        <div class="third-span">
+          <div class="main-title">
+            <h1>Scenario</h1>
+          </div>
+        </div>
+      </div>
+
+      <img src="images/user-flow.png" class="img-right pop-up" alt="">
+      <p class="img-caption">Userflow diagram of an emergency situation with Twitter Emergencies implemented.</p>
+
+      <section id="create-emerg">
+      <div class="third-span">
+        <h3 class="sub-eaccount">Verified Emergency Account</h3>
+        <div class="main-title">
+          <h1>Creating an Emergency Feed</h1>
+        </div>
+      </div>
+
+      <div class="space-above">
+        <h2>Getting Started</h2>
+        <p class="writeup">When accessing the Emergency tab, users are greeted with a list of their current active Emergency Feeds that can be viewed and edited, as well those that have been archived.</p>
+        <p class="writeup">Here, users can click on ‘Create’ to begin the 5 step process.</p>
+        <p class="writeup space-below">To set expectations with the emergency tool, we’re providing the user a glance at what steps they will be going through to create an Emergency Feed. This will help Emergency Officials prepare the necessary information needed.</p>
+        <video controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
+        <source src="images/home-intro.mp4" type="video/mp4" alt="Video walk through going from the home screen of twitter to the main emergencies tab, where there is an area showing all active emergencies, there are two currently active Wildfire Williams lake, and Flooding Delta BC. There is another tab that is labeled Archived emergencies. They click onto an orange create button that brings up a new screen showing and overview of the 5 step process to create an emergency: Define, locate, describe, contributors, Review.">Your browser does not support the HTML5 video tag.
+        </video>
+        <p class="img-caption">Navigating to the Emergency tab to create an Emergency.</p>
+
+        <!-- DESIGN DECISION -->
+        <div class="design-decision">
+          <h3 class="sub-twitter">Key Design Decision</h3>
+          <p class="writeup">Emergency Officials are professionals, we are aiming to guide and streamline their existing process. The goal is to help them directly reach those who may be affected, rather than create a complicated tool that hinders their efficiency.</p>
+        </div>
+
+        <h2 class="space-above">Defining the Situation</h2>
+        <p class="writeup">The Emergency Official will first define and locate the emergency. It’s important to accurately set up the Notification Area. We’re offering 3 different methods to help them define the areas where people will be directly affected by the emergency.</p>
+        <p class="writeup">We chose to provide a radius, region, and path option because of the variety of possible events that could occur, and also to cater to different types of location data in use.</p>
+        <p class="writeup space-below">Our Help icon opens up a dialog that explains each option with visuals and suggestions for when it’s best to use.</p>
+        <video controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
+        <source src="images/define-locate.mp4" type="video/mp4" alt="Video walk through showing UI for creating an emergency, On the left is the fields for describing emergency, on the right is a preview of what the emergecy card looks like its orange with white text. They step through the define and location step and look at the help popups which describe what to do for each step.">Your browser does not support the HTML5 video tag.
+        </video>
+        <p class="img-caption">The first two steps of the creating an Emergency process.</p>
+
+        <!-- DESIGN DECISION -->
+        <div class="design-decision">
+          <h3 class="sub-twitter">Key Design Decision</h3>
+          <p class="writeup">The preview on the right updates at every step to show the Emergency Official what the Emergency Feed will look like from the Search Tab for Twitter Users.</p>
+        </div>
+
+        <h2 class="space-above">Description & Contributors</h2>
+        <p class="writeup">Lastly, it is necessary to provide a short and clear description of the situation and add in Contributors.</p>
+        <p class="writeup">Often times there are mutliple emergency organizations responding to an event.</p>
+        <p class="writeup space-below">Here, other Emergency Verified Accounts can be added to the Emergency Feed, where they can help curate the content and this will let Twitter Users know of other trustful sources.</p>
+
+        <video controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
+        <source src="images/describe-contributors.mp4" type="video/mp4" alt="Video walkthrough showing UI for creating an emergency. First filling in emergency description then moving on to the step where contributors are added via a search box and suggested list.">Your browser does not support the HTML5 video tag.
+        </video>
+        <p class="img-caption">Steps 3 and 4 of creating an Emergency.</p>
+
+        <h2 class="space-above">Confirm & Publish</h2>
+        <p class="writeup">In an attempt to prevent any errors, we prompt the user to take time to confirm all information step by step before publishing.</p>
+        <p class="writeup">Twitter Users will be viewing Emergency Feeds as credible because of the Emergency Verified Badge. If information is questionable, Twitter’s credibility may take a hit.</p>
+        <p class="writeup space-below">After publishing, we showcase the next steps to take. View the Emergency Feed and start adding tweets.</p>
+
+        <video controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
+        <source src="images/review-confirm-pub.mp4" type="video/mp4" alt="Video walkthrough showing UI for confirming an emergency. Each step is highlighted on the side and in the emergency card, One by one each step is confirmed, with the current step in full opactiy and the rest faded.">Your browser does not support the HTML5 video tag.
+        </video>
+        <p class="img-caption">The final steps of reviewing and publishing a new Emergency.</p>
+
+        <h2 class="space-above">Curating Tweets</h2>
+        <p class="writeup">There are 2 ways for a Verified Emergency Account to add tweets into an Emergency Feed.</p>
+        <p class="writeup">When writing a tweet, they have the option to select one of their Active Emergencies to have the tweet added to the Emergency Feed.</p>
+        <p class="writeup space-below">Or, the user may select any relevant and accurate tweet from another Twitter account, and add it to one of their Emergency Feeds.</p>
+
+        <video controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
+        <source src="images/curating.mp4" type="video/mp4" alt="Video walkthrough showing UI for adding a tweet to an emergency. By pressing the more menu on a tweet a menue pops up with an add to emergency button. A UI then pops up to choose which emergnecy to add the tweet to and then to confirm.">Your browser does not support the HTML5 video tag.
+        </video>
+        <p class="img-caption space-below">Adding tweets to an active Emergency from Home.</p>
+
+        <video controls loop muted preload="metadata" class="img-left pop-up desktop-vid">
+        <source src="images/write-tweet.mp4" type="video/mp4" alt="Video walkthrough showing UI for writing a tweet and adding it straight to an emergency. This happens through a new orange emergency button that open up the option to choose one of the accounts active emergencies.  ">Your browser does not support the HTML5 video tag.
+        </video>
+        <p class="img-caption">Writing a tweet and adding it directly into an Emergency.</p>
+      </div>
+      </section>
+
+      <section id="view-emerg">
+      <div class="third-span">
+        <h3 class="sub-public">twitter users</h3>
+        <div class="main-title">
+          <h1>Receiving Emergency Information</h1>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="space-above">Discovery</h2>
+        <p class="writeup">If a Twitter User is located within the set boundaries of an active emergency, they will see the Emergency Feed pushed to the top of their Moments. It will be the first thing they see when opening the Search Tab.</p>
+        <p class="writeup space-below">Twitter Users who are not threatened by an active emergency will also see the Emergency Feed on the Search Tab, but within the list of trending moments.</p>
+
+        <div class="half-span-img">
+          <img src="images/discovery-1.png" class="img-right pop-up" alt="Mobile screenshot showing the Emergency Preview card in orange at the top of the search feed on twitter.">
+        </div>
+        <div class="half-span-img">
+          <img src="images/discovery-2.png" class="img-right pop-up" alt="Mobile screenshot showing an emergency that is not nearby the users’s current location. It shows up with an orange title in the list or trending topics.">
+        </div>
+        <p class="img-caption space-below">Viewing an Emergency as a local within the notification area and as a Twitter user outside of the region.</p>
+
+        <!-- DESIGN DECISION -->
+        <div class="design-decision">
+          <h3 class="sub-twitter">Key Design Decision</h3>
+          <p class="writeup">When people use to Twitter to find information, the first action they take is move to the Search Tab. Here we are utilizing the Moments and Trending Topics as optimal placement for Twitter Emergencies, rather than creating a separate page or section within the platform.</p>
+        </div>
+      </div>
+      </section>
+
+      <section class="less-space-above">
+        <div class="vid-text third-span">
+          <video controls loop muted preload="metadata" class="img-left pop-up">
+	        <source src="images/mobile-feed.mp4" type="video/mp4" alt="Video showing the opening of a twitter emergency. Tapping header, and seeing full description and tweet feed presented.">Your browser does not support the HTML5 video tag.
+          </video>
+        </div>
+        <div class="half-span vert-align-center left-half">
+          <h2>The Emergency Feed</h2>
+          <p class="writeup">When an Emergency Feed is created by a Verified Emergency Account, this is what it looks like to Twitter Users.</p>
+          <p class="writeup">When clicking into the feed, Twitter Users will be able to scroll through the latest tweets, gather information, and find resources.</p>
+          <p class="writeup">The goal was to follow the existing Twitter UI pattern to make it easy to use for those viewing an Emergency Feed for the first time.</p>
+        </div>
+      </section>
+
+      <section class="less-space-above">
+        <div class="half-span vert-align-center left-half">
+          <h2 class="space-above">Enabling Notifications</h2>
+          <p class="writeup">Turning on notifications allows Twitter Users to rest easy and let verified updates come to them, so they don’t feel frustrated when searching through an influs of tweets and misinformation to hear the latest news.</p>
+          <p class="writeup">Verified Emergency Accounts are able to keep track of how many users are subscribed to notifications, to have an understanding of how many people they are helping and how far their reach is.</p>
+        </div>
+        <div class="half-span">
+        <div class="half-span-img">
+          <video controls loop muted preload="metadata" class="img-left pop-up">
+          <source src="images/notify.mp4" type="video/mp4" alt="Video showing user scrolling to the bottom of the feed to show they are up to date, then hitting notifications where they are prompted to confirm they want to recive updates.">Your browser does not support the HTML5 video tag.
+          </video>
+        </div>
+        <div class="half-span-img">
+          <img src="images/push-not.png" class="img-right pop-up" alt="Screenshot of an iphone lockscreen showing a new notification from the Wildfire South of fort nelson. It is a tweet from @globalBC saying there are highwinds and that a warning has been issued.">
+        </div>
+        <p class="img-caption space-below">Enabling push notifications from an Emergency.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="third-span"></div>
+        <div class="half-span vert-align-center left-half">
+          <h2 class="space-above">Sharing Information</h2>
+          <p class="writeup space-below">Retweeting from an Emergency Feed or a Verified Emergency Account will feature the Emergency Verified Badge. This will help bring credibility to users Twitter conversations.</p>
+          <img src="images/share-info.png" class="img-right pop-up" alt="Screenshot of tweet in a home feed with orange text highlighting that that tweet is also in the Wildfire South of Fort Nelson Emergency Feed.">
+          <p class="img-caption">Image caption goes here.</p>
+        </div>
+      </section>
+
+      <!-- FEASABILITY -->
+      <section id="feasability" class="page-section">
+      <div class="third-span">
+        <div class="main-title">
+          <h1>Making Sense</h1>
+        </div>
+      </div>
+      <div class="half-span">
+
+        <h2>Technically Similar</h2>
+        <p class="writeup">Our goal is to keep the solution as similar to the Twitter platform as possible 2 reasons:</p>
+        <p class="writeup">To prevent Twitter Users from being confronted with the cognitive load of learning a new Interface in a stressful situation.</p>
+        <p class="writeup">Also to consider potentially helping the Twitter team develop the solution easier by reusing existing code and frameworks.</p>
+
+        <h2 class="space-above">A Twitter Team</h2>
+        <p class="writeup">Twitter will need a dedicated team for verifying emergency accounts and monitoring accuracy and public engagement.</p>
+
+        <h2 class="space-above">Measurability</h2>
+        <p class="writeup">By keeping track of the emergency tool usage we could measure how often Emergency Officials are interacting with it, and how often people are viewing the information.</p>
+        <p class="writeup">We can gather statistics like engagement based on how many users sign up for emergency notifications, and how often Verified content is retweeted and shared.</p>
+      </div>
+      </section>
+
+      <!-- VALUE -->
+      <section id="value" class="page-section">
+      <div class="third-span">
+        <div class="main-title">
+          <h1>The Value</h1>
+        </div>
+      </div>
+      <div class="half-span">
+        <h3 class="sub-twitter">twitter</h3>
+        <h2>Intangible Value: Brand Perception</h2>
+        <p class="writeup">Twitter currently represents their brand through 3 Brand Pillars: Communication, Expression, and Engagement. Using these pillars as a guide, we made sure that Twitter Emergencies touches upon each in a unique way.</p>
+        <h3 class="in-text">1. Communication</h3>
+        <p class="writeup">  Streamlining direct communication between Emergency Officials and Twitter Users.</p>
+        <h3 class="in-text">2. Expression</h3>
+        <p class="writeup">  Allow users to express themselves based upon valid facts.</p>
+        <h3 class="in-text">3. Engagement</h3>
+        <p class="writeup">  Promote engagement to spread awareness of emergency situations.</p>
+
+        <h2 class="space-above">Tangible Value: Business</h2>
+        <p class="writeup">Twitter currently operates <a href="https://about.twitter.com/en_us/values/twitter-for-good.html">Twitter For Good</a> initiatives for civic engagement, volunteerism, and charitable partnerships.</p>
+        <p class="writeup">A project like Twitter Emergencies would create relationships and partnerships with local communities and emergency services. Twitter Emergencies fits the Twitter for Good initiatives while also improving brand perception and gaining an advantage over other competitors.</p>
+
+        <p class="writeup">We’re also providing business value through the spike of people engaging with Twitter during emergencies, whether they are regular users or not. Establishing Twitter as a credible source of emergency information could potentially increase the amount of returning and active users.</p>
+
+        <h3 class="sub-eaccount space-above">emergency officials</h3>
+        <h2>Intangible Value: Lighten the Burden</h2>
+        <p class="writeup">In these stressful situations, Emergency Officials have to be focused, alert, and careful with their work. By providing this tool, we are hoping to lighten the burden of constantly answering questions and directing Twitter Users to resources.</p>
+        <h2>Tangible Value: The Tool</h2>
+        <p class="writeup">This tool is created to directly work with the information Emergency Officials are sending out through long and confusing reports. It helps them break down the information clearly and easily in laymans terms, and provides them with the status of being a credible resource.</p>
+
+        <h3 class="sub-public space-above">twitter users</h3>
+        <h2>Tangible Value: Emergency Feed</h2>
+        <p class="writeup">This solution is immediately ready to use for any current Twitter Users. The Twitter Emergencies Feed is easily accessible and makes it easier to find credible information which can be shared to others and promote informed discussions.</p>
+
+        <h2 class="space-above">Intangible Value: Reducing Stress</h2>
+        <p class="writeup">When people know where to turn to for answers in stressful situations, it reduces the cognitive overhead of sifting through various resources like tweets and irrelevant information.</p>
+        <p class="writeup">It provides people with the knowledge required to say safe and informed during emergencies, as well bring a sense of reassurance and confidence that the information is trustworthy.</p>
+      </div>
+      </section>
+
+    </div>
+
+    <!--  WEBSITE FOOTER  -->
+    <footer class="footer-home">
+      <p>Isabel Chan, Kateryna Jones, Natalie Lingren, Mischa Price, Preston Romey & Jasmeen Virk</p>
+    </footer>
+
+  </body>
+
+</html>
