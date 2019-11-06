@@ -23,20 +23,32 @@
 
   </head>
 
-  <body>
+
+<!--TODO-->
+<!--Make video players scroll behind nav menu-->
+<!--Scenario scrolls too far-->
+<!--at 850-720 px "scenario" jumps up with 'who does this impact'-->
+  
+<body>
     <header>
       <!--  NAV MENU -->
       <!-- added 'scroll' class-->
-      <!-- MUST BE MORE SCALABLE AT SMALL SIZES, HAMBURGER MENU-->
-      <nav id="navBar">
-        <a href="#overview" class="button-nav scroll">Overview</a>
-        <a href="#framing" class="button-nav scroll">Framing</a>
-        <a href="#audiences" class="button-nav scroll">Audiences</a>
-        <!--Scenario scrolls too far-->
-        <a href="#scenarios" class="button-nav scroll">Scenarios</a>
-        <a href="#feasability" class="button-nav scroll">Feasability</a>
-        <a href="#value" class="button-nav scroll">Value</a>
-      </nav>
+      <!-- Added toggle functionality for hamburger menu-->
+      <div class = "nav">
+        <!--this creates the hamburger menu icon-->
+        <label for="toggle">&#9776;</label>
+        <!--this toggle switch is hidden with css, but adds toggle functionality to hamburger menu-->
+        <input type="checkbox" id="toggle">
+        <!--below is the original navbar-->
+        <nav class=navMenu id="navBar">
+          <a href="#overview" class="button-nav scroll">Overview</a>
+          <a href="#framing" class="button-nav scroll">Framing</a>
+          <a href="#audiences" class="button-nav scroll">Audiences</a>
+          <a href="#scenarios" class="button-nav scroll">Scenarios</a>
+          <a href="#feasability" class="button-nav scroll">Feasability</a>
+          <a href="#value" class="button-nav scroll">Value</a>
+        </nav>
+      </div>
 
     </header>
     <!-- INCREASED L + R BORDERS FOR MAIN WRITEUP CONTENT -->

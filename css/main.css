@@ -133,6 +133,7 @@ header {
   padding-top: 2rem;
 }
 
+/* NAVIGATION */
 nav {
   width: 100%;
   border-bottom: 2px solid #EAEFF3;
@@ -142,6 +143,59 @@ nav {
   flex-flow: row wrap;
   flex: 1 1 auto;
 }
+
+.nav{
+  text-align:right;
+}
+
+.navMenu{
+  display: inline-flex;
+}
+
+a {
+  color: #2AA3EF;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.button-nav {
+  display: inline-flex;
+  width: 16.25%;
+  justify-content: center;
+  letter-spacing: 0.02rem;
+  padding-bottom: 0.5rem;
+  color: #657786;
+}
+
+a.button-nav:active, a.button-nav:focus, a.button-nav:hover  {
+  transition-duration: 1s;
+  color: #2AA3EF;
+  border-bottom: 2px solid #2AA3EF;
+}
+
+.active {
+  transition-duration: 1s;
+  color: #2AA3EF;
+  border-bottom: 2px solid #2AA3EF;
+}
+
+/* changes the hamburger menu button */
+label{
+  margin:0, 2rem, 0, 5rem;
+  font-size:2.5rem;
+  line-height:2rem;
+/* doesn't display untill media query sets it on*/
+  display:none;
+  width: 2rem;
+  padding-bottom: 1rem;
+}
+
+#toggle{
+  /* turns off display for hamburger toggle switch*/
+  display:none;
+}
+
 
 iframe {
   z-index: -1;
@@ -175,31 +229,6 @@ iframe {
   border-radius: 10px;
 }
 
-a {
-  color: #2AA3EF;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-
-.button-nav {
-  display: inline-flex;
-  width: 16.25%;
-  justify-content: center;
-  letter-spacing: 0.02rem;
-  padding-bottom: 0.5rem;
-  color: #657786;
-}
-
-a.button-nav:active, a.button-nav:focus, a.button-nav:hover  {
-  color: #2AA3EF;
-  border-bottom: 2px solid #2AA3EF;
-}
-
-.active {
-  color: #2AA3EF;
-  border-bottom: 2px solid #2AA3EF;
-}
 
 /* FOOTER ATTRIBUTES */
 footer {

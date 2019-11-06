@@ -33,9 +33,12 @@
       margin-top: 1rem;
     }
 
+    /*
     .button-nav {
       width: 16%;
     }
+
+    */
 
     .space-above {
       padding-top: 1rem;
@@ -143,4 +146,31 @@
   video.img-left {
     width: 90%;
   }
+}
+
+/* HAMBURGER MENU @ 660px*/
+
+@media only screen and (max-width:660px){
+  label{
+    display:block;
+    cursor: pointer;
+  }
+
+  .button-nav{
+    text-align: center;
+    display:block;
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    border-bottom:1px solid #657786;
+  }
+
+  .navMenu{
+    display:none;
+  }
+
+  #toggle:checked + .navMenu{
+    display:block;
+  }
+
 }
