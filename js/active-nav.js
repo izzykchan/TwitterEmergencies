@@ -45,3 +45,19 @@ $(window).scroll(function(){
 
 	console.log(scrollbarLocation)
 })
+
+
+//SCROLL PROGRESS INDICATION
+
+//adapted from: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+
+//when page is scrolled, execute myScrollFunction
+window.onscroll = function() {myScrollFunction()};
+
+//what myScrollFunction does
+function myScrollFunction(){
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("myBar").style.width = scrolled + "%";
+}

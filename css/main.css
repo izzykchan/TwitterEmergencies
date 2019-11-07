@@ -242,3 +242,36 @@ footer {
   color: #657786;
   text-align: center;
 }
+
+
+/* SCROLL PROGRESS INDICATOR STUFF */
+
+/* Style the header: fixed position (always stay at the top) 
+
+MUST BE ADAPTED TO BE BELOW NAVIGATION
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+
+
+/* The progress container (white background) 
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: rgb(255, 255, 255);
+}
+
+/* The progress bar (scroll indicator) 
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+*/
