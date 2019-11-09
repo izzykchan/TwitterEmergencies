@@ -2,6 +2,22 @@ html {
   scroll-behavior: smooth;
 }
 
+/* THIS IS VIMEO SHIT */
+.vimeo{
+  padding:56.25% 0 0 0;
+  position:relative;
+  /* THIS FINALLY FIXED THE CONCEPT VID ISSUE*/
+  z-index:500;
+}
+
+iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
 /* ALL DIVS HAVE THESE ATTRIBUTES */
 div {
   flex-flow: row wrap;
