@@ -2,12 +2,17 @@ html {
   scroll-behavior: smooth;
 }
 
+header{
+  /* so nothing scrolls over the header + navbar*/
+  z-index:200000
+}
+
 /* THIS IS VIMEO SHIT */
 .vimeo{
   padding:56.25% 0 0 0;
   position:relative;
   /* THIS FINALLY FIXED THE CONCEPT VID ISSUE*/
-  z-index:500;
+  z-index:5;
 }
 
 iframe{
@@ -152,7 +157,7 @@ nav {
   width: 100%;
   border-bottom: 2px solid #EAEFF3;
   font-weight: 600;
-  z-index: 1;
+  z-index: 99;
 
   flex-flow: row wrap;
   flex: 1 1 auto;
