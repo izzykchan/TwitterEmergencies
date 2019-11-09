@@ -21,6 +21,7 @@
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
       <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="https://player.vimeo.com/api/player.js"></script>
       <script src="js/active-nav.js"></script>
       <script src="js/jquery.waypoints.js"></script>
 
@@ -62,10 +63,10 @@
           <a href="#value" class="button-nav scroll">Value</a>
         </nav>
       </div>
-
     </header>
+
     <!-- INCREASED L + R BORDERS FOR MAIN WRITEUP CONTENT -->
-    <div class="writeup-content">
+    <div class="writeup-content"></div>
 
     <section class="page-section" id="overview">
     <div class="third-span">
@@ -81,8 +82,12 @@
 
     <!-- PROJECT CONCEPT VIDEO -->
     <div class="full-span space-above">
-      <!-- EMBEDDING VIDEO FROM VIMEO -->
-      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/313748148" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <!-- EMBEDDING VIDEO FROM VIMEO (FIXED)
+      onlyreason for the issue i can think of: iframe being wrapped in the div is affecting selection?
+      Geting rid of "posution:absolute; in style (css now) allows playback, but its small for some reason????"
+      -->
+      <div class="vimeo"><iframe src="https://player.vimeo.com/video/313748148" class="iframe" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
+    
     </div>
 
     <div class="full-span">
